@@ -1,0 +1,13 @@
+There's a bug: <observable symptom, with concrete data>.
+It reproduces with: <exact command> (always fails | fails 1 in N times).
+Output/error: @logs/error.log  (or paste it as is, with the full stack trace)
+Expected: <correct result>. Got: <current result>.
+Since when: <commit, version or suspicious change, if you know>.
+
+How I want you to work:
+1. Reproduce it yourself first with the command and show me the output.
+2. Give me 2-3 hypotheses ordered by likelihood and how you'd rule out each one. Don't edit anything yet.
+3. If needed, add temporary logs marked with DEBUG-CLAUDE and run it again.
+4. Write a regression test that fails because of this bug and show me it fails.
+5. Make the minimal change that turns it green. Don't modify or loosen the test.
+6. Run the whole suite, remove the DEBUG-CLAUDE logs and summarize the root cause in 3 lines.

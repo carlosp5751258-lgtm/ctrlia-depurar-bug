@@ -1,0 +1,13 @@
+Hay un bug: <síntoma observable, con datos concretos>.
+Se reproduce con: <comando exacto> (falla siempre | falla 1 de cada N veces).
+Salida/error: @logs/error.log  (o pégalo tal cual, con el stack trace completo)
+Esperaba: <resultado correcto>. Obtengo: <resultado actual>.
+Desde cuándo: <commit, versión o cambio sospechoso, si lo sabes>.
+
+Cómo quiero que trabajes:
+1. Reprodúcelo tú primero con el comando y enséñame la salida.
+2. Dame 2-3 hipótesis ordenadas por probabilidad y cómo descartarías cada una. No edites nada todavía.
+3. Si hace falta, añade logs temporales marcados con DEBUG-CLAUDE y ejecuta de nuevo.
+4. Escribe un test de regresión que falle por este bug y enséñame que falla.
+5. Haz el cambio mínimo que lo ponga en verde. No modifiques ni relajes el test.
+6. Ejecuta toda la suite, quita los logs DEBUG-CLAUDE y resume la causa raíz en 3 líneas.

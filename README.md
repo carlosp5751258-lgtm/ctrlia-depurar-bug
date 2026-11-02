@@ -2,6 +2,8 @@
 
 [Read in English](README.en.md)
 
+English version: [README.en.md](README.en.md) (archivos en `en/`).
+
 Una plantilla de prompt para depurar con Claude Code sin parches del síntoma, y un ejemplo real con su test de regresión: `dividir_en_cuotas("100.00", 3)` devuelve tres cuotas que suman 99.99 en vez de 100.00.
 
 El flujo completo (reproducir, pasar la evidencia, hipótesis en modo plan, logs `DEBUG-CLAUDE`, test en rojo y arreglo mínimo, límites de `/rewind`) está en la receta:
@@ -14,7 +16,7 @@ El flujo completo (reproducir, pasar la evidencia, hipótesis en modo plan, logs
 | Archivo | Para qué |
 | --- | --- |
 | `plantilla-prompt.txt` | El prompt para un bug, en español: rellena lo que va entre `< >` |
-| `prompt-template.en.txt` | La misma plantilla en inglés |
+| `en/plantilla-prompt.txt` | La misma plantilla en inglés |
 | `ejemplo/con-bug/cuotas.py` | El código con el bug (redondea cada cuota con `float`) |
 | `ejemplo/arreglado/cuotas.py` | El arreglo mínimo con `Decimal`: los céntimos sobrantes van a la primera cuota |
 | `ejemplo/test_cuotas.py` | El test de regresión `test_regresion_bug_42_suma_exacta` |
